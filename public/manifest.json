@@ -1,0 +1,14 @@
+{
+    "id": "1500589406434778103",
+    "name": "SVG Export",
+    "api": "1.0.0",
+    "main": "code.js",
+    "ui": "index.html",
+    "capabilities": [],
+    "enableProposedApi": false,
+    "editorType": ["figma"],
+    "documentAccess": "dynamic-page",
+    "networkAccess": {
+    "allowedDomains": ["none"]
+  }
+}
