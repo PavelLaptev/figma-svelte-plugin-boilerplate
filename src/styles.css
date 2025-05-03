@@ -1,30 +1,3 @@
 body {
-  background-color: #f0f0f0;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  
-}
-
-h1, p {
-  margin: 0;
-}
-
-.svg-settings {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.settings-section {
-  display: flex;
-  flex-direction: column;
-}
-
-.caption {
-  font-size: 14px;
-  margin-bottom: 15px;
+  background-color:rgb(184, 240, 255);
 }

@@ -1,6 +1,6 @@
 {
-    "id": "1500589406434778103",
-    "name": "SVG Export",
+    "id": "paste-your-id-here",
+    "name": "Svelte boilerplate",
     "api": "1.0.0",
     "main": "code.js",
     "ui": "index.html",

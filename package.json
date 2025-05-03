@@ -1,5 +1,5 @@
 {
-    "name": "fig-svelte-plugin-template",
+    "name": "figma-svelte-plugin-boilerplate",
     "version": "1.0.0",
     "description": "Your Figma Plugin",
     "main": "code.js",
@@ -30,8 +30,5 @@
         "ts-loader": "^9.5.2",
         "tslib": "^2.8.1",
         "typescript": "^5.8.3"
-    },
-    "dependencies": {
-        "vkbeautify": "^0.99.3"
     }
 }
