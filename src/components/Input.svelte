@@ -1,12 +1,13 @@
 <script lang="ts">
+  import { HTMLInputAttributes, HTMLInputTypeAttribute } from 'svelte/elements';
+
   interface Props {
-    value: string;
+    type?: HTMLInputTypeAttribute;
+    value: string | number;
     placeholder?: string;
   }
 
-  let { value = $bindable(), placeholder }: Props = $props();
+  let { value = $bindable(), type, placeholder }: Props = $props();
 </script>
 
-<div>
-  <input type="text" bind:value {placeholder} class="border-2 border-gray-300 rounded p-2 w-full" />
-</div>
+<input {type} bind:value {placeholder} />
