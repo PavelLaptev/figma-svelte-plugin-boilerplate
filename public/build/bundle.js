@@ -4089,15 +4089,15 @@ ${properties}`
 	  }
 	}
 
-	var css_248z$1 = "body{background-color:#b8f0ff}";
-	styleInject(css_248z$1);
+	var css_248z$3 = "body{background-color:#3f3f3f;color:#fff;margin:0;padding:0}";
+	styleInject(css_248z$3);
 
-	var css_248z = ".update-button.svelte-isa357{background-color:#007bff;border:none;border-radius:5px;color:#fff;cursor:pointer;font-size:16px;padding:10px 20px;transition:background-color .3s ease}";
-	styleInject(css_248z);
+	var css_248z$2 = ".update-button.svelte-1knu4dh{background-color:#ff9d73;border:none;border-radius:5px;color:#000;cursor:pointer;font-size:16px;padding:8px 20px;transition:background-color .3s ease}";
+	styleInject(css_248z$2);
 
 	Button[FILENAME] = 'src/components/Button.svelte';
 
-	var root$2 = add_locations(template(`<button class="update-button svelte-isa357"><!></button>`), Button[FILENAME], [[12, 0]]);
+	var root$2 = add_locations(template(`<button class="update-button svelte-1knu4dh"><!></button>`), Button[FILENAME], [[12, 0]]);
 
 	function Button($$anchor, $$props) {
 		check_target(new.target);
@@ -4130,9 +4130,12 @@ ${properties}`
 
 	delegate(['click']);
 
+	var css_248z$1 = "input.svelte-s98ym5{background:none;border:1px solid #ccc;border-radius:4px;box-sizing:border-box;color:#fff;font-size:14px;padding:6px;width:100%}";
+	styleInject(css_248z$1);
+
 	Input[FILENAME] = 'src/components/Input.svelte';
 
-	var root$1 = add_locations(template(`<input>`), Input[FILENAME], [[13, 0]]);
+	var root$1 = add_locations(template(`<input class="svelte-s98ym5">`), Input[FILENAME], [[13, 0]]);
 
 	function Input($$anchor, $$props) {
 		check_target(new.target);
@@ -4151,11 +4154,25 @@ ${properties}`
 		return pop({ ...legacy_api() });
 	}
 
+	var css_248z = "main.svelte-64y7xd{display:flex;flex-direction:column;font-family:sans-serif;padding:20px}h1.svelte-64y7xd{font-size:24px;margin:0 0 20px}p.svelte-64y7xd{margin:0 0 10px}.input-group.svelte-64y7xd{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}.caption.svelte-64y7xd{font-size:14px;margin-bottom:5px;opacity:.7}.figma-response.svelte-64y7xd{border:1px solid #ffffff54;padding:10px;& p:where(.svelte-64y7xd){color:#ffffffc3;font-size:14px;line-height:1.5;margin:0 0 5px}}";
+	styleInject(css_248z);
+
 	UI[FILENAME] = 'src/UI.svelte';
 
-	var root_2 = add_locations(template(`<p> </p>`), UI[FILENAME], [[44, 4]]);
-	var root_3 = add_locations(template(`<p>No rectangle created yet.</p>`), UI[FILENAME], [[46, 4]]);
-	var root = add_locations(template(`<main class="plugin"><h1>Figma/Svelte plugin boilerplate</h1> <!> <!> <!> <p>Response from Figma:</p> <!></main>`), UI[FILENAME], [[35, 0, [[36, 2], [42, 2]]]]);
+	var root_2 = add_locations(template(`<p class="svelte-64y7xd"> </p>`), UI[FILENAME], [[47, 6]]);
+	var root_3 = add_locations(template(`<p class="svelte-64y7xd">No rectangle created yet.</p>`), UI[FILENAME], [[49, 6]]);
+
+	var root = add_locations(template(`<main class="plugin svelte-64y7xd"><h1 class="svelte-64y7xd">Figma/Svelte plugin boilerplate</h1> <div class="input-group svelte-64y7xd"><p class="caption svelte-64y7xd">Enter rectangle dimensions:</p> <!> <!> <!></div> <div class="figma-response svelte-64y7xd"><p class="svelte-64y7xd">Response from Figma:</p> <!></div></main>`), UI[FILENAME], [
+		[
+			35,
+			0,
+			[
+				[36, 2],
+				[37, 2, [[38, 4]]],
+				[44, 2, [[45, 4]]]
+			]
+		]
+	]);
 
 	function UI($$anchor, $$props) {
 		check_target(new.target);
@@ -4186,9 +4203,10 @@ ${properties}`
 		};
 
 		var main = root();
-		var node = sibling(child(main), 2);
+		var div = sibling(child(main), 2);
+		var node = sibling(child(div), 2);
 
-		validate_binding('bind:value={rectFrame.width}', () => rectFrame, () => 'width', 37, 23);
+		validate_binding('bind:value={rectFrame.width}', () => rectFrame, () => 'width', 39, 25);
 
 		Input(node, {
 			type: 'number',
@@ -4203,7 +4221,7 @@ ${properties}`
 
 		var node_1 = sibling(node, 2);
 
-		validate_binding('bind:value={rectFrame.height}', () => rectFrame, () => 'height', 38, 23);
+		validate_binding('bind:value={rectFrame.height}', () => rectFrame, () => 'height', 40, 25);
 
 		Input(node_1, {
 			type: 'number',
@@ -4230,7 +4248,8 @@ ${properties}`
 			$$slots: { default: true }
 		});
 
-		var node_3 = sibling(node_2, 4);
+		var div_1 = sibling(div, 2);
+		var node_3 = sibling(child(div_1), 2);
 
 		{
 			var consequent = ($$anchor) => {

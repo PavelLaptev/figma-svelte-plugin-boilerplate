@@ -8,7 +8,7 @@
         "dev": "rollup -c --bundleConfigAsCjs -w"
     },
     "type": "module",
-    "author": "PAvel Laptev",
+    "author": "Pavel Laptev",
     "license": "MIT",
     "devDependencies": {
         "@figma/plugin-typings": "^1.110.0",

@@ -11,3 +11,16 @@
 </script>
 
 <input {type} bind:value {placeholder} />
+
+<style>
+  input {
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    color: white;
+    border-radius: 4px;
+    background: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+</style>
