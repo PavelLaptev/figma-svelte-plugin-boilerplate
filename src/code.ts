@@ -1,4 +1,6 @@
-figma.showUI(__html__, { themeColors: true, width: 300, height: 370 });
+import { generateRandomRgbColor } from './utils';
+
+figma.showUI(__html__, { themeColors: true, width: 300, height: 380 });
 
 console.clear();
 console.log('Figma plugin started');
@@ -10,6 +12,13 @@ figma.ui.onmessage = (msg) => {
       height: Number(msg.val.height),
     }
     const rect = figma.createRectangle();
+    // set the rectangle's fill color to a random color
+    rect.fills = [
+      {
+        type: 'SOLID',
+        color: generateRandomRgbColor(),
+      },
+    ];
     rect.resize(rectFrame.width, rectFrame.height);
 
     // select the rectangle
