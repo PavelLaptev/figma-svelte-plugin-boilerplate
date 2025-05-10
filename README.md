@@ -2,8 +2,7 @@
 
 A boilerplate project to kickstart building Figma plugins using Svelte.
 
-<img width="100%" alt="image" src="https://github.com/user-attachments/assets/ecf41380-a9b1-4cb8-9f02-31bd67bbc673" />
-
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/b85e8951-50d3-4aad-95c3-148698929dc6" />
 
 ## Getting Started
 1. Clone the repository:
