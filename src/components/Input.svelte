@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { HTMLInputAttributes, HTMLInputTypeAttribute } from 'svelte/elements';
+  import type { HTMLInputAttributes, HTMLInputTypeAttribute } from 'svelte/elements';
 
   interface Props {
     type?: HTMLInputTypeAttribute;
